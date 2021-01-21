@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Add begining of array</title>
+</head>
+<h4> Array Task</h4>
+<button onclick="myFunction()"> Check</button>
+<p id="chk"></p>
+
+<body>
+    <script>
+        // how to add 'ReactJs' to the begining of booksarray
+        var books = ['javascript', 'HTML', 'Typescript'];
+        document.getElementById('chk').innerHTML = books;
+        function myFunction() {
+
+            books.unshift("ReactJs");
+            document.getElementById("chk").innerHTML = books;
+        }
+    </script>
+</body>
+
+</html>
